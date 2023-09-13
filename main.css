@@ -151,17 +151,18 @@ header {
   padding-top: 98px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-gap: 1rem;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: .5rem;
   grid-template-areas:
     "main main main main"
-    "left left right right"
+    "left left left left"
+    "right right right right"
 }
 
 .main-banner {
   grid-area: main;
   width: 100%;
-  height: 18rem;
+  height: 100%;
   padding: 1.1rem;
   border-radius: 15px;
   background: #ebebe9;
@@ -174,14 +175,12 @@ header {
   grid-area: left;
   background-image: url("https://i.postimg.cc/QdcCNbY1/sub-banner-left.jpg");
   width: 100%;
-  height: 10rem;
 }
 
 .sub-banner-right {
   grid-area: right;
   background-image: url("https://i.postimg.cc/QMbM1M3M/sub-banner-right.jpg");
   width: 100%;
-  height: 10rem;
 }
 
 .main-banner .title {
@@ -253,15 +252,11 @@ header {
   width: 100%;
 }
 
-.banner {
-
-}
-
 .link-section {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 5rem;
+  gap: 2rem;
   width: 100%;
   height: 80px;
   background: #F9ECE4;
@@ -321,6 +316,8 @@ footer {
   /* introduce */
   .introduce-wrapper {
     grid-gap: .5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     grid-template-areas: 
       "main main left left"
       "main main right right"

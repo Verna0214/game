@@ -46,6 +46,14 @@ a {
 /* 共用樣式 */
 .container {
   width: 85%;
+  margin: 0 auto 3.5rem auto;
+}
+
+.background-image {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 25px;
 }
 
 /* header */
@@ -73,6 +81,7 @@ header {
   position: absolute;
   top: 100%;
   width: 100%;
+  background: #fff;
   transition: transform .25s ease-out;
   transform-origin: top;
   transform: scale(1, 0);
@@ -137,8 +146,143 @@ header {
   top: .7rem;
 }
 
+/* introduce */
+.introduce-wrapper {
+  padding-top: 98px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 1rem;
+  grid-template-areas:
+    "main main main main"
+    "left left right right"
+}
+
+.main-banner {
+  grid-area: main;
+  width: 100%;
+  height: 18rem;
+  padding: 1.1rem;
+  border-radius: 15px;
+  background: #ebebe9;
+  -webkit-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 12px 0px rgba(0, 0, 0, 0.1);
+}
+
+.sub-banner-left {
+  grid-area: left;
+  background-image: url("https://i.postimg.cc/QdcCNbY1/sub-banner-left.jpg");
+  width: 100%;
+  height: 10rem;
+}
+
+.sub-banner-right {
+  grid-area: right;
+  background-image: url("https://i.postimg.cc/QMbM1M3M/sub-banner-right.jpg");
+  width: 100%;
+  height: 10rem;
+}
+
+.main-banner .title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #161d15;
+  margin-bottom: 1rem;
+}
+
+.main-banner .info {
+  font-size: 1rem;
+  letter-spacing: .2px;
+}
+
+/* rule */
+.rule-title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  font-size: 2rem;
+  color: #ab8c83;
+  letter-spacing: 1.5px;
+}
+
+.rule-wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto auto;
+}
+
+.rule-img {
+  width: 100%;
+  border-radius: 25px;
+}
+
+.rule-info {
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.rule-info p {
+  font-size: 1.1rem;
+  color: #161d15;
+}
+
+/* tip */
+.tip-title,
+.reason-title,
+.learn-title,
+.other-title,
+.banner-title {
+  margin-bottom: 1.5rem;
+  text-align: center;
+  line-height: 2.5rem;
+  font-size: 2rem;
+  color: #ab8c83;
+  letter-spacing: 1.5px;
+}
+
+.tip-info,
+.reason-info,
+.learn-info {
+  padding: 1.5rem;
+  border-radius: 25px;
+  background: #ebebe9;
+}
+
+.other .container img {
+  width: 100%;
+}
+
+.banner {
+
+}
+
+.link-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  width: 100%;
+  height: 80px;
+  background: #F9ECE4;
+}
+
+.link-section a {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #CC5F5A;
+}
+
+footer {
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  color: red;
+  background-color: #F9ECE4;
+}
 
 @media screen and (min-width: 920px) {
+  /* header */
   .nav-toggle-label {
     display: none;
   }
@@ -174,4 +318,29 @@ header {
   .nav-link {
     color: #fff;
   }
+  /* introduce */
+  .introduce-wrapper {
+    grid-gap: .5rem;
+    grid-template-areas: 
+      "main main left left"
+      "main main right right"
+  }
+
+  .background-image {
+    background-size: cover;
+  }
+
+  .main-banner {
+    height: 25rem;
+  }
+  /* rule */
+  .card {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    align-items: center;
+  }
+
 }

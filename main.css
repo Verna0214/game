@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+
+/* reset css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  width: 100%;
+  background: #f8f8f8;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 0;
+  line-height: 1.4rem;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* 共用樣式 */
+.container {
+  width: 85%;
+}
+
+.nav {
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  background: #737c75;
+}
+
+.nav-title {
+  line-height: 60px;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.nav-list{
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.nav-item {
+  margin-top: 10px;
+}
+
+.nav-link {
+  color: #161d15;
+  letter-spacing: 1px;
+}

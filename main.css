@@ -151,7 +151,7 @@ header {
   padding-top: 98px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   grid-gap: .5rem;
   grid-template-areas:
     "main main main main"
@@ -254,6 +254,7 @@ header {
 
 .link-section {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 2rem;

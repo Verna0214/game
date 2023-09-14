@@ -257,14 +257,14 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
-  height: 80px;
+  height: 150px;
   background: #F9ECE4;
 }
 
 .link-section a {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 600;
   color: #CC5F5A;
 }
